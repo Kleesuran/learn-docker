@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM archlinux:latest
 
 WORKDIR /app
 
-RUN apt update && apt install -y curl
+RUN pacman -Syu --noconfirm curl
 
 CMD ["curl", "-I", "https://www.bing.com"]
