@@ -11,5 +11,7 @@ ARG APP_NAME=my-cool-app
 
 COPY . .
 
+ENV python=3.14
+
 CMD ["curl", "-I", "https://www.bing.com"]
 #RUN pacman -Syu --noconfirm python
